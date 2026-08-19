@@ -205,12 +205,14 @@
 
     try {
       const result = mode === 'signup'
-        ? await authClient.signUp.email({ email, password, name: fullNameInput.value.trim() || email.split('@')[0] })
-        : await authClient.signIn.email({ email, password, rememberMe: document.getElementById('remember').checked });
+        ? await authClient.signUp.email({ email, password, name: fullNameInput ? fullNameInput.value.trim() : email.split('@')[0] })
+        : await authClient.signIn.email({ email, password, rememberMe: document.getElementById('remember')?.checked });
 
       if (result.error) {
         statusLine.style.color = 'var(--color-danger)';
-        statusLine.textContent = result.error.message || 'Something went wrong. Please try again.';
+        // Displays exact error message from Neon Auth
+        statusLine.textContent = result.error.message || 'Something went wrong.';
+        alert('Auth Error: ' + JSON.stringify(result.error));
         loginBtn.disabled = false;
         loginBtn.textContent = mode === 'signup' ? 'Create account' : 'Sign in to dashboard';
         return;
@@ -218,9 +220,13 @@
 
       window.location.href = 'dashboard.html';
     } catch (err) {
-      console.error('Neon Auth error', err);
+      console.error('Neon Auth error details:', err);
       statusLine.style.color = 'var(--color-danger)';
-      statusLine.textContent = 'Could not reach the authentication service. Please try again.';
+      
+      // Print the precise cause instead of generic text
+      statusLine.textContent = 'Auth Exception: ' + (err.message || 'Check browser console (F12)');
+      alert('Neon Auth Failed: ' + err.message + '\nCheck F12 Console for details.');
+      
       loginBtn.disabled = false;
       loginBtn.textContent = mode === 'signup' ? 'Create account' : 'Sign in to dashboard';
     }
