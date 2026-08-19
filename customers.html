@@ -165,12 +165,12 @@
       <button class="close-btn" data-close-panel>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
-    </div>
-    <div class="modal-body">
-      <div class="field"><label for="cName">Full Name</label><input class="input" type="text" id="cName" placeholder="e.g. Ananya Sharma"></div>
-      <div class="field"><label for="cPhone">Phone Number</label><input class="input" type="tel" id="cPhone" placeholder="+91 98765 43210"></div>
-      <div class="field" style="margin-bottom:0;"><label for="cEmail">Email Address</label><input class="input" type="email" id="cEmail" placeholder="customer@email.com"></div>
-    </div>
+    <</div>
+<div class="modal-body">
+  <div class="field">
+    <label for="cName">Full Name</label>
+    <input class="input" type="text" id="cName" placeholder="Enter full name">
+  </div>
     <div class="modal-footer">
       <button class="btn btn-secondary" data-close-panel>Cancel</button>
       <button class="btn btn-primary" id="saveCustomerBtn">Save Customer</button>
@@ -180,14 +180,7 @@
 
 <script src="assets/js/app.js"></script>
 <script>
-  const customers = [
-    { id: 1, name: 'Ananya Sharma', initials: 'AS', phone: '+91 98765 43210', email: 'ananya.sharma@email.com', orders: 24, spent: '₹18,420.00', last: '05 Jul 2026', tier: 'Gold' },
-    { id: 2, name: 'Rahul Verma', initials: 'RV', phone: '+91 91234 56789', email: 'rahul.verma@email.com', orders: 16, spent: '₹9,860.00', last: '03 Jul 2026', tier: 'Silver' },
-    { id: 3, name: 'Priya Nair', initials: 'PN', phone: '+91 99887 66554', email: 'priya.nair@email.com', orders: 31, spent: '₹26,150.00', last: '05 Jul 2026', tier: 'Gold' },
-    { id: 4, name: 'Karan Mehta', initials: 'KM', phone: '+91 90123 45678', email: 'karan.mehta@email.com', orders: 8, spent: '₹4,230.00', last: '28 Jun 2026', tier: 'Bronze' },
-    { id: 5, name: 'Sneha Reddy', initials: 'SR', phone: '+91 98765 12340', email: 'sneha.reddy@email.com', orders: 19, spent: '₹12,980.00', last: '04 Jul 2026', tier: 'Silver' },
-    { id: 6, name: 'Arjun Kapoor', initials: 'AK', phone: '+91 97531 08642', email: 'arjun.kapoor@email.com', orders: 5, spent: '₹2,140.00', last: '20 Jun 2026', tier: 'Bronze' },
-    { id: 7, name: 'Divya Iyer', initials: 'DI', phone: '+91 96420 13579', email: 'divya.iyer@email.com', orders: 27, spent: '₹21,760.00', last: '02 Jul 2026', tier: 'Gold' },
+  const customers = [];
   ];
 
   const tierCls = { Gold: 'badge-warning', Silver: 'badge-neutral', Bronze: 'badge-info' };
