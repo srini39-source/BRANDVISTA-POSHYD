@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Product · BrandVista POS</title>
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/products.css">
+</head>
+<body>
+<div class="sidebar-backdrop" data-menu-toggle></div>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="sidebar-brand-mark">BV</div>
+      <div class="sidebar-brand-text">BrandVista <span>POS</span></div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Overview</div>
+      <a href="dashboard.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+        Dashboard
+      </a>
+      <div class="sidebar-section-label">Sales</div>
+      <a href="pos.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/><path d="M2.5 3h2.6l2.6 12.6a2 2 0 0 0 2 1.6h8a2 2 0 0 0 2-1.5l1.6-7.2H6.4"/></svg>
+        POS Billing
+      </a>
+      <a href="sales-history.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+        Sales History
+      </a>
+      <div class="sidebar-section-label">Catalog</div>
+      <a href="products.html" class="sidebar-link active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7 12 3 4 7l8 4 8-4Z"/><path d="M4 7v10l8 4 8-4V7"/><path d="M12 11v10"/></svg>
+        Products
+      </a>
+      <a href="categories.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>
+        Categories
+      </a>
+      <div class="sidebar-section-label">People</div>
+      <a href="customers.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Customers
+      </a>
+      <a href="suppliers.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="7" width="15" height="13" rx="1.5"/><path d="M16 11h4l3 3v6h-7"/><circle cx="5.5" cy="20.5" r="1.6"/><circle cx="18.5" cy="20.5" r="1.6"/></svg>
+        Suppliers
+      </a>
+      <div class="sidebar-section-label">Insights</div>
+      <a href="reports.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12.5" y="8" width="3" height="10"/><rect x="18" y="5" width="3" height="13"/></svg>
+        Reports
+      </a>
+      <div class="sidebar-section-label">System</div>
+      <a href="settings.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        Settings
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="profile.html" class="sidebar-user">
+        <div class="sidebar-avatar" data-user-initials>RB</div>
+        <div><div class="sidebar-user-name" data-user-name>Riteesh B.</div><div class="sidebar-user-role">Store Owner</div></div>
+      </a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="topbar">
+      <div class="flex items-center gap-16">
+        <button class="menu-toggle" data-menu-toggle aria-label="Open menu">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div class="topbar-title">
+          <h1>Edit Product</h1>
+          <p><a href="products.html" style="color:var(--color-primary);">Products</a> / Colombian Roast Coffee 250g</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn btn-secondary" onclick="window.location.href='products.html'">Cancel</button>
+        <button class="btn btn-primary" id="saveBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2Z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          Save Changes
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <form id="editProductForm">
+      <div class="product-form-grid">
+
+        <!-- Left column -->
+        <div class="flex-col gap-16">
+          <div class="card card-pad">
+            <div class="section-title">Basic Information</div>
+            <div class="section-sub">Name, description and identifiers for this product.</div>
+            <div class="field">
+              <label for="name">Product Name *</label>
+              <input class="input" type="text" id="name" value="Colombian Roast Coffee 250g" required>
+            </div>
+            <div class="input-row">
+              <div class="field">
+                <label for="barcode">Barcode</label>
+                <input class="input" type="text" id="barcode" value="8901234567890">
+              </div>
+              <div class="field">
+                <label for="sku">SKU</label>
+                <input class="input" type="text" id="sku" value="CRC-250">
+              </div>
+            </div>
+            <div class="field" style="margin-bottom:0;">
+              <label for="desc">Description</label>
+              <textarea class="input" id="desc">Rich, full-bodied single-origin Colombian coffee, medium roast, whole bean 250g pack.</textarea>
+            </div>
+          </div>
+
+          <div class="card card-pad">
+            <div class="section-title">Pricing &amp; Inventory</div>
+            <div class="section-sub">Set price, tax rate and stock tracking rules.</div>
+            <div class="input-row">
+              <div class="field">
+                <label for="price">Selling Price (₹) *</label>
+                <input class="input" type="number" id="price" step="0.01" value="420.00" required>
+              </div>
+              <div class="field">
+                <label for="cost">Cost Price (₹)</label>
+                <input class="input" type="number" id="cost" step="0.01" value="260.00">
+              </div>
+              <div class="field">
+                <label for="tax">GST Rate</label>
+                <select class="select" id="tax">
+                  <option>0%</option>
+                  <option selected>5%</option>
+                  <option>12%</option>
+                  <option>18%</option>
+                  <option>28%</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-row" style="margin-bottom:0;">
+              <div class="field">
+                <label for="stock">Current Stock</label>
+                <input class="input" type="number" id="stock" value="86">
+              </div>
+              <div class="field">
+                <label for="lowStock">Low Stock Threshold</label>
+                <input class="input" type="number" id="lowStock" value="20">
+              </div>
+              <div class="field">
+                <label for="unit">Unit</label>
+                <select class="select" id="unit">
+                  <option selected>Piece</option>
+                  <option>Kg</option>
+                  <option>Litre</option>
+                  <option>Pack</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-pad" style="border-color:var(--color-danger-bg);">
+            <div class="section-title" style="color:var(--color-danger);">Danger Zone</div>
+            <div class="section-sub">Permanently remove this product from your catalog.</div>
+            <button type="button" class="btn btn-danger" id="deleteBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg>
+              Delete Product
+            </button>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="flex-col gap-16">
+          <div class="card card-pad">
+            <div class="section-title">Product Image</div>
+            <input type="file" id="imageInput" accept="image/png, image/jpeg, image/webp, image/gif" hidden>
+            <div class="image-drop" id="imageDrop">
+              <img id="imagePreview" class="image-drop-preview" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84'%3E%3Crect width='84' height='84' rx='12' fill='%232563eb'/%3E%3Ctext x='50%25' y='55%25' font-size='30' fill='white' text-anchor='middle' font-family='Poppins,sans-serif'%3EC%3C/text%3E%3C/svg%3E" alt="Product preview">
+              <div id="imageDropPrompt">
+                <div>Click to replace image</div>
+                <div class="hint">PNG, JPG or WEBP up to 5MB</div>
+              </div>
+              <div style="margin-top:10px;">
+                <button type="button" class="btn btn-secondary btn-sm" id="removeImageBtn">Remove Image</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-pad">
+            <div class="section-title">Organization</div>
+            <div class="field">
+              <label for="category">Category</label>
+              <select class="select" id="category">
+                <option selected>Beverages</option>
+                <option>Bakery</option>
+                <option>Dairy</option>
+                <option>Pantry</option>
+                <option>Snacks</option>
+              </select>
+            </div>
+            <div class="field" style="margin-bottom:0;">
+              <label for="supplier">Supplier</label>
+              <select class="select" id="supplier">
+                <option>Nutriwell Distributors</option>
+                <option selected>Global Roasters Ltd.</option>
+                <option>Fresh Farms Co.</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="card card-pad">
+            <div class="section-title">Status</div>
+            <div class="flex justify-between items-center">
+              <div>
+                <div style="font-weight:600; font-size:13.5px;">Active</div>
+                <div class="text-sm text-muted">Visible in POS &amp; storefront</div>
+              </div>
+              <label class="switch"><input type="checkbox" checked><span class="switch-track"></span></label>
+            </div>
+          </div>
+
+          <div class="card card-pad">
+            <div class="section-title">Activity</div>
+            <div class="timeline">
+              <div class="timeline-item"><h5>Stock replenished (+50 units)</h5><p>3 days ago by Riteesh B.</p></div>
+              <div class="timeline-item"><h5>Price updated to ₹420.00</h5><p>2 weeks ago by Riteesh B.</p></div>
+              <div class="timeline-item"><h5>Product created</h5><p>Jan 12, 2026</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </form>
+    </main>
+  </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script>
+  // Pull the live category list (including anything added on the Categories
+  // page) into this dropdown, keeping "Beverages" selected since that's this
+  // demo product's current category.
+  BrandVista.populateCategorySelect(document.getElementById('category'), 'Beverages');
+
+  // This demo page always edits the seed product "Colombian Roast Coffee
+  // 250g" (id 1 in the shared store) since it has no product-id URL param.
+  const EDITING_PRODUCT_ID = 1;
+
+  // Product image upload: reads the chosen/dropped file with FileReader and
+  // swaps it into the preview — fully client-side, no backend required.
+  // `imageChanged`/`newImageValue` track whether the user actually touched
+  // the image so Save only overwrites it when there's a real change.
+  let imageChanged = false;
+  let newImageValue = null;
+  (() => {
+    const DEFAULT_IMAGE = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84'%3E%3Crect width='84' height='84' rx='12' fill='%2394a3b8'/%3E%3Ctext x='50%25' y='58%25' font-size='34' fill='white' text-anchor='middle' font-family='Poppins,sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
+    const imageInput = document.getElementById('imageInput');
+    const imageDrop = document.getElementById('imageDrop');
+    const imagePreview = document.getElementById('imagePreview');
+    const removeImageBtn = document.getElementById('removeImageBtn');
+
+    function handleImageFile(file) {
+      if (!file) return;
+      if (!file.type.startsWith('image/')) {
+        BrandVista.showToast('Please choose an image file (PNG, JPG or WEBP).', 'error');
+        return;
+      }
+      if (file.size > 5 * 1024 * 1024) {
+        BrandVista.showToast('Image is too large. Please choose a file under 5MB.', 'error');
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        imagePreview.src = e.target.result;
+        imageChanged = true;
+        newImageValue = e.target.result;
+      };
+      reader.onerror = () => BrandVista.showToast('Could not read that image. Please try again.', 'error');
+      reader.readAsDataURL(file);
+    }
+
+    imageDrop.addEventListener('click', (e) => {
+      if (e.target.closest('#removeImageBtn')) return;
+      imageInput.click();
+    });
+    imageInput.addEventListener('change', () => handleImageFile(imageInput.files[0]));
+
+    ['dragover', 'dragleave', 'drop'].forEach((evt) => imageDrop.addEventListener(evt, (e) => e.preventDefault()));
+    imageDrop.addEventListener('dragover', () => (imageDrop.style.borderColor = 'var(--color-primary)'));
+    imageDrop.addEventListener('dragleave', () => (imageDrop.style.borderColor = ''));
+    imageDrop.addEventListener('drop', (e) => {
+      imageDrop.style.borderColor = '';
+      handleImageFile(e.dataTransfer.files[0]);
+    });
+
+    removeImageBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      imagePreview.src = DEFAULT_IMAGE;
+      imageChanged = true;
+      newImageValue = null;
+      imageInput.value = '';
+    });
+  })();
+
+  document.getElementById('saveBtn').addEventListener('click', () => {
+    const name = document.getElementById('name').value.trim();
+    const price = parseFloat(document.getElementById('price').value);
+    if (!name || isNaN(price)) {
+      BrandVista.showToast('Please fill in the required fields.', 'error');
+      return;
+    }
+
+    // Persist the changes into the shared product store so the Products
+    // table and the POS Billing screen pick them up immediately.
+    const products = BrandVista.getProducts();
+    let p = products.find((x) => x.id === EDITING_PRODUCT_ID);
+    if (!p) {
+      // Seed product was deleted earlier in this session — recreate it.
+      p = { id: EDITING_PRODUCT_ID, color: '#2563eb', image: null };
+      products.unshift(p);
+    }
+    p.name = name;
+    p.barcode = document.getElementById('barcode').value.trim() || '—';
+    p.category = document.getElementById('category').value;
+    p.price = price;
+    p.stock = parseInt(document.getElementById('stock').value) || 0;
+    p.low = parseInt(document.getElementById('lowStock').value) || 10;
+    p.status = BrandVista.computeStockStatus(p.stock, p.low);
+    if (imageChanged) p.image = newImageValue;
+    BrandVista.saveProducts(products);
+
+    BrandVista.showToast('Changes saved successfully.', 'success');
+    setTimeout(() => (window.location.href = 'products.html'), 900);
+  });
+
+  document.getElementById('deleteBtn').addEventListener('click', () => {
+    if (confirm('Delete "Colombian Roast Coffee 250g"? This action cannot be undone.')) {
+      const products = BrandVista.getProducts().filter((p) => p.id !== EDITING_PRODUCT_ID);
+      BrandVista.saveProducts(products);
+      BrandVista.showToast('Product deleted.', 'success');
+      setTimeout(() => (window.location.href = 'products.html'), 900);
+    }
+  });
+</script>
+<script type="module">
+  import { protectPage } from './assets/js/neon-auth.js';
+  protectPage();
+</script>
+</body>
+</html>

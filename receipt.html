@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Receipt Preview · BrandVista POS</title>
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="sidebar-backdrop no-print" data-menu-toggle></div>
+<div class="app-shell">
+
+  <aside class="sidebar no-print">
+    <div class="sidebar-brand">
+      <div class="sidebar-brand-mark">BV</div>
+      <div class="sidebar-brand-text">BrandVista <span>POS</span></div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Overview</div>
+      <a href="dashboard.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+        Dashboard
+      </a>
+      <div class="sidebar-section-label">Sales</div>
+      <a href="pos.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/><path d="M2.5 3h2.6l2.6 12.6a2 2 0 0 0 2 1.6h8a2 2 0 0 0 2-1.5l1.6-7.2H6.4"/></svg>
+        POS Billing
+      </a>
+      <a href="sales-history.html" class="sidebar-link active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+        Sales History
+      </a>
+      <div class="sidebar-section-label">Catalog</div>
+      <a href="products.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7 12 3 4 7l8 4 8-4Z"/><path d="M4 7v10l8 4 8-4V7"/><path d="M12 11v10"/></svg>
+        Products
+      </a>
+      <a href="categories.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>
+        Categories
+      </a>
+      <div class="sidebar-section-label">People</div>
+      <a href="customers.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Customers
+      </a>
+      <a href="suppliers.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="7" width="15" height="13" rx="1.5"/><path d="M16 11h4l3 3v6h-7"/><circle cx="5.5" cy="20.5" r="1.6"/><circle cx="18.5" cy="20.5" r="1.6"/></svg>
+        Suppliers
+      </a>
+      <div class="sidebar-section-label">Insights</div>
+      <a href="reports.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12.5" y="8" width="3" height="10"/><rect x="18" y="5" width="3" height="13"/></svg>
+        Reports
+      </a>
+      <div class="sidebar-section-label">System</div>
+      <a href="settings.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        Settings
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="profile.html" class="sidebar-user">
+        <div class="sidebar-avatar" data-user-initials>RB</div>
+        <div><div class="sidebar-user-name" data-user-name>Riteesh B.</div><div class="sidebar-user-role">Store Owner</div></div>
+      </a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="topbar no-print">
+      <div class="flex items-center gap-16">
+        <button class="menu-toggle" data-menu-toggle aria-label="Open menu">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div class="topbar-title">
+          <h1>Receipt Preview</h1>
+          <p id="rcptSubtitle">Loading receipt…</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <a href="sales-history.html" class="btn btn-secondary">Back to Sales</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="receipt-page-wrap">
+        <div class="receipt" id="receiptCard">
+          <div class="receipt-center">
+            <div class="receipt-logo" id="rcptLogo">BV</div>
+            <h3 id="rcptStoreName">BrandVista General Store</h3>
+            <p class="muted-line" id="rcptStoreAddress">42 Market Street, Koramangala</p>
+            <p class="muted-line" id="rcptStorePhone"></p>
+            <p class="muted-line" id="rcptGstin">GSTIN: 29ABCDE1234F1Z5</p>
+          </div>
+
+          <div class="receipt-dashed"></div>
+
+          <div class="receipt-row"><span>Order No.</span><span id="rcptOrderNo">#—</span></div>
+          <div class="receipt-row"><span>Date</span><span id="rcptDate">—</span></div>
+          <div class="receipt-row"><span>Cashier</span><span id="rcptCashier">—</span></div>
+          <div class="receipt-row"><span>Customer</span><span id="rcptCustomer">—</span></div>
+
+          <div class="receipt-dashed"></div>
+
+          <div class="receipt-items" id="rcptItems"></div>
+
+          <div class="receipt-dashed"></div>
+
+          <div class="receipt-row"><span>Subtotal</span><span id="rcptSubtotal">—</span></div>
+          <div class="receipt-row" id="rcptDiscountRow"><span>Discount</span><span id="rcptDiscount">—</span></div>
+          <div class="receipt-row" id="rcptTaxRow"><span id="rcptTaxLabel">GST</span><span id="rcptTax">—</span></div>
+          <div class="receipt-total-row"><span>Total</span><span id="rcptTotal">—</span></div>
+          <div class="receipt-row" style="margin-top:10px;"><span>Paid via</span><span id="rcptPayment">—</span></div>
+
+          <div class="receipt-barcode" id="barcode"></div>
+          <p class="muted-line receipt-center" id="rcptBarcodeText">*—*</p>
+
+          <div class="receipt-dashed"></div>
+          <p class="muted-line receipt-center" id="rcptFooter">Thank you for shopping with us!</p>
+          <p class="muted-line receipt-center">Items can be exchanged within 7 days with a valid receipt.</p>
+
+          <div class="receipt-actions no-print">
+            <button class="btn btn-secondary btn-block" id="downloadReceiptBtn">Download</button>
+            <button class="btn btn-primary btn-block" onclick="window.print()">Print Receipt</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script>
+  /* ==========================================================================
+     Renders the receipt from the stored sale record.
+
+     Which sale: ?id=<orderId> when arriving from checkout or sales history,
+     otherwise the most recent sale. If there are no sales at all we say so
+     rather than displaying invented figures — a receipt showing numbers that
+     belong to no transaction is worse than an empty state.
+
+     Business details and the tax rate come from the sale's own snapshot, so
+     reprinting an old bill shows the details in force when it was rung up.
+     ========================================================================== */
+  document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const requestedId = params.get('id');
+    const sale = requestedId ? BrandVista.getSaleById(requestedId) : BrandVista.getLastSale();
+
+    const el = (id) => document.getElementById(id);
+
+    if (!sale) {
+      el('rcptSubtitle').textContent = 'No sale to display';
+      el('rcptItems').innerHTML =
+        '<p class="muted-line receipt-center">No completed sales yet.<br>Ring one up on the POS Billing screen.</p>';
+      ['rcptSubtotal', 'rcptDiscount', 'rcptTax', 'rcptTotal', 'rcptPayment'].forEach((id) => {
+        el(id).textContent = '—';
+      });
+      el('rcptOrderNo').textContent = '—';
+      el('rcptBarcodeText').textContent = '';
+      renderBarcode();
+      return;
+    }
+
+    // Fall back to current settings for sales written before snapshots existed.
+    const store = sale.store || BrandVista.getSettings();
+    const symbol = store.currencySymbol || '₹';
+    const money = (n) => `${symbol}${Number(n).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+
+    /* ---- Business header ---- */
+    el('rcptStoreName').textContent = store.name || store.storeName || 'Store';
+    el('rcptStoreAddress').textContent = store.address || store.storeAddress || '';
+    el('rcptStorePhone').textContent = (store.phone || store.storePhone)
+      ? `Tel: ${store.phone || store.storePhone}` : '';
+    const gstin = store.gstNumber || '';
+    el('rcptGstin').textContent = gstin ? `GSTIN: ${gstin}` : '';
+
+    if (store.logo) {
+      el('rcptLogo').innerHTML =
+        `<img src="${store.logo}" alt="" style="width:100%;height:100%;object-fit:contain;border-radius:inherit;">`;
+    } else {
+      el('rcptLogo').textContent = (store.name || store.storeName || 'BV')
+        .split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0].toUpperCase()).join('') || 'BV';
+    }
+
+    /* ---- Meta ---- */
+    el('rcptSubtitle').textContent = `Order #${sale.id} · ${sale.dateLabel}`;
+    el('rcptOrderNo').textContent = `#${sale.id}`;
+    el('rcptDate').textContent = sale.dateLabel;
+    el('rcptCashier').textContent = sale.cashier || '—';
+    el('rcptCustomer').textContent = sale.customer || 'Walk-in Customer';
+
+    /* ---- Line items ---- */
+    el('rcptItems').innerHTML = (sale.items || []).map((i) => `
+      <div class="receipt-row">
+        <span>${i.qty} × ${escapeHtml(i.name)}</span>
+        <span>${money(i.lineTotal !== undefined ? i.lineTotal : i.price * i.qty)}</span>
+      </div>`).join('');
+
+    /* ---- Totals ---- */
+    el('rcptSubtotal').textContent = money(sale.subtotal);
+
+    if (sale.discount > 0) {
+      el('rcptDiscount').textContent = `−${money(sale.discount)}`;
+    } else {
+      el('rcptDiscountRow').style.display = 'none';
+    }
+
+    if (sale.taxRate > 0) {
+      el('rcptTaxLabel').textContent = `GST (${sale.taxRate}%)`;
+      el('rcptTax').textContent = money(sale.tax);
+    } else {
+      el('rcptTaxRow').style.display = 'none';
+    }
+
+    el('rcptTotal').textContent = money(sale.total);
+    el('rcptPayment').textContent = sale.payment || '—';
+    el('rcptBarcodeText').textContent = `*${sale.id}*`;
+    el('rcptFooter').textContent = store.receiptFooter || 'Thank you for shopping with us!';
+
+    renderBarcode();
+
+    function escapeHtml(str) {
+      const d = document.createElement('div');
+      d.textContent = str == null ? '' : str;
+      return d.innerHTML;
+    }
+  });
+
+  // Decorative barcode pattern (not a scannable encoding).
+  function renderBarcode() {
+    const barcode = document.getElementById('barcode');
+    if (!barcode) return;
+    let bars = '';
+    for (let i = 0; i < 46; i++) {
+      const height = Math.random() > 0.5 ? '100%' : `${50 + Math.random() * 40}%`;
+      const width = Math.random() > 0.7 ? '4px' : '2.5px';
+      bars += `<span style="height:${height}; width:${width};"></span>`;
+    }
+    barcode.innerHTML = bars;
+  }
+
+  document.getElementById('downloadReceiptBtn').addEventListener('click', () => {
+    BrandVista.showToast('Preparing receipt for download…', 'info');
+  });
+</script>
+<script type="module">
+  import { protectPage } from './assets/js/neon-auth.js';
+  protectPage();
+</script>
+</body>
+</html>

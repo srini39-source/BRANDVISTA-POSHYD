@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Dashboard page — KPI cards, revenue chart, top products, recent sales,
+   low stock alerts.
+   ========================================================================== */
+
+.chart-card-head { display: flex; justify-content: space-between; align-items: flex-start; padding: 22px 24px 0; }
+.chart-legend { display: flex; gap: 18px; margin-top: 4px; }
+.legend-item { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--color-text-muted); }
+.legend-dot { width: 9px; height: 9px; border-radius: 50%; }
+.range-tabs { display: flex; background: var(--color-bg); border-radius: 999px; padding: 4px; gap: 2px; }
+.range-tab { padding: 7px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 600; color: var(--color-text-muted); }
+.range-tab.active { background: var(--color-card); color: var(--color-primary); box-shadow: var(--shadow-sm); }
+.chart-canvas-wrap { padding: 10px 16px 20px; }
+
+.top-product-row { display: flex; align-items: center; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--color-border); }
+.top-product-row:last-child { border-bottom: none; }
+.top-product-thumb {
+  width: 42px; height: 42px; border-radius: var(--radius-sm); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; color: #fff;
+}
+.top-product-info { flex: 1; min-width: 0; }
+.top-product-info h5 { font-size: 13.5px; font-weight: 600; }
+.top-product-info span { font-size: 12px; color: var(--color-text-muted); }
+.top-product-bar-track { width: 100%; height: 5px; border-radius: 999px; background: var(--color-bg); margin-top: 6px; overflow: hidden; }
+.top-product-bar-fill { height: 100%; border-radius: 999px; background: var(--color-primary); }
+.top-product-value { font-weight: 700; font-size: 13.5px; white-space: nowrap; }
+
+.recent-sale-row { display: flex; align-items: center; gap: 13px; padding: 13px 0; border-bottom: 1px solid var(--color-border); }
+.recent-sale-row:last-child { border-bottom: none; }
+.recent-sale-avatar {
+  width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 12.5px; color: #fff;
+  background: linear-gradient(135deg, var(--color-primary), #60a5fa);
+}
+.recent-sale-info { flex: 1; min-width: 0; }
+.recent-sale-info h5 { font-size: 13.5px; }
+.recent-sale-info span { font-size: 12px; color: var(--color-text-muted); }
+.recent-sale-amount { font-weight: 700; font-size: 13.5px; }
+
+.low-stock-row { display: flex; align-items: center; gap: 13px; padding: 13px 0; border-bottom: 1px solid var(--color-border); }
+.low-stock-row:last-child { border-bottom: none; }
+.low-stock-thumb { width: 40px; height: 40px; border-radius: var(--radius-sm); background: var(--color-warning-bg); color: var(--color-warning); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.low-stock-thumb svg { width: 18px; height: 18px; }
+.low-stock-info { flex: 1; min-width: 0; }
+.low-stock-info h5 { font-size: 13.5px; }
+.low-stock-info span { font-size: 12px; color: var(--color-text-muted); }

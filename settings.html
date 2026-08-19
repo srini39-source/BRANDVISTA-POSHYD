@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings · BrandVista POS</title>
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/settings.css">
+</head>
+<body>
+<div class="sidebar-backdrop" data-menu-toggle></div>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="sidebar-brand-mark">BV</div>
+      <div class="sidebar-brand-text">BrandVista <span>POS</span></div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Overview</div>
+      <a href="dashboard.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+        Dashboard
+      </a>
+      <div class="sidebar-section-label">Sales</div>
+      <a href="pos.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/><path d="M2.5 3h2.6l2.6 12.6a2 2 0 0 0 2 1.6h8a2 2 0 0 0 2-1.5l1.6-7.2H6.4"/></svg>
+        POS Billing
+      </a>
+      <a href="sales-history.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+        Sales History
+      </a>
+      <div class="sidebar-section-label">Catalog</div>
+      <a href="products.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7 12 3 4 7l8 4 8-4Z"/><path d="M4 7v10l8 4 8-4V7"/><path d="M12 11v10"/></svg>
+        Products
+      </a>
+      <a href="categories.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>
+        Categories
+      </a>
+      <div class="sidebar-section-label">People</div>
+      <a href="customers.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Customers
+      </a>
+      <a href="suppliers.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="7" width="15" height="13" rx="1.5"/><path d="M16 11h4l3 3v6h-7"/><circle cx="5.5" cy="20.5" r="1.6"/><circle cx="18.5" cy="20.5" r="1.6"/></svg>
+        Suppliers
+      </a>
+      <div class="sidebar-section-label">Insights</div>
+      <a href="reports.html" class="sidebar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12.5" y="8" width="3" height="10"/><rect x="18" y="5" width="3" height="13"/></svg>
+        Reports
+      </a>
+      <div class="sidebar-section-label">System</div>
+      <a href="settings.html" class="sidebar-link active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        Settings
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="profile.html" class="sidebar-user">
+        <div class="sidebar-avatar" data-user-initials>RB</div>
+        <div><div class="sidebar-user-name" data-user-name>Riteesh B.</div><div class="sidebar-user-role">Store Owner</div></div>
+      </a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="topbar">
+      <div class="flex items-center gap-16">
+        <button class="menu-toggle" data-menu-toggle aria-label="Open menu">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div class="topbar-title">
+          <h1>Settings</h1>
+          <p>Manage your store configuration</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn btn-primary" id="saveSettingsBtn">Save Changes</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="settings-layout">
+
+        <nav class="settings-nav card card-pad">
+          <button class="settings-nav-item active" data-panel="general">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="7" width="15" height="13" rx="1.5"/><path d="M16 11h4l3 3v6h-7"/></svg>
+            Store Profile
+          </button>
+          <button class="settings-nav-item" data-panel="tax">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            Tax &amp; Currency
+          </button>
+          <button class="settings-nav-item" data-panel="receipt">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Receipt
+          </button>
+          <button class="settings-nav-item" data-panel="appearance">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/></svg>
+            Appearance
+          </button>
+          <button class="settings-nav-item" data-panel="backup">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Backup &amp; Data
+          </button>
+        </nav>
+
+        <div>
+          <!-- Store Profile -->
+          <div class="settings-panel active" id="panel-general">
+            <div class="card card-pad">
+              <div class="section-title">Store Logo</div>
+              <div class="section-sub">This appears on receipts and the login screen.</div>
+              <div class="logo-uploader mb-24">
+                <div class="logo-preview" id="logoPreview">BV</div>
+                <div>
+                  <button class="btn btn-secondary btn-sm" id="uploadLogoBtn">Upload New Logo</button>
+                  <div class="hint">Recommended 512×512px, PNG or SVG</div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="field"><label for="storeName">Store Name</label><input class="input" type="text" id="storeName" value="BrandVista General Store"></div>
+              <div class="input-row">
+                <div class="field"><label for="storePhone">Phone</label><input class="input" type="tel" id="storePhone" value="+91 98765 43210"></div>
+                <div class="field"><label for="storeEmail">Email</label><input class="input" type="email" id="storeEmail" value="hello@brandvistastore.com"></div>
+              </div>
+              <div class="field" style="margin-bottom:0;"><label for="storeAddress">Store Address</label><textarea class="input" id="storeAddress">42 Market Street, Koramangala, Bengaluru, KA 560034</textarea></div>
+            </div>
+          </div>
+
+          <!-- Tax & Currency -->
+          <div class="settings-panel" id="panel-tax">
+            <div class="card card-pad">
+              <div class="section-title">Tax Settings</div>
+              <div class="section-sub">Applied automatically to new products.</div>
+              <div class="input-row">
+                <div class="field"><label for="gstNumber">GST Registration Number</label><input class="input" type="text" id="gstNumber" value="29ABCDE1234F1Z5"></div>
+                <div class="field"><label for="defaultGst">Default GST Rate</label>
+                  <select class="select" id="defaultGst">
+                    <option>0%</option>
+                    <option selected>5%</option>
+                    <option>12%</option>
+                    <option>18%</option>
+                    <option>28%</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field" style="margin-bottom:0;">
+                <label class="checkbox-row"><input type="checkbox" id="taxEnabled" checked> Apply tax to bills</label>
+              </div>
+            </div>
+            <div class="card card-pad mt-24">
+              <div class="section-title">Currency</div>
+              <div class="input-row" style="margin-bottom:0;">
+                <div class="field"><label for="currency">Currency</label>
+                  <select class="select" id="currency">
+                    <option value="₹" selected>Indian Rupee (₹)</option>
+                    <option value="$">US Dollar ($)</option>
+                    <option value="€">Euro (€)</option>
+                    <option value="£">British Pound (£)</option>
+                  </select>
+                </div>
+                <div class="field"><label for="decimalFormat">Decimal Format</label>
+                  <select class="select" id="decimalFormat">
+                    <option>1,234.56</option>
+                    <option>1.234,56</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Receipt -->
+          <div class="settings-panel" id="panel-receipt">
+            <div class="grid grid-2-1">
+              <div class="card card-pad">
+                <div class="section-title">Receipt Footer</div>
+                <div class="section-sub">Printed at the bottom of every receipt.</div>
+                <div class="field"><label for="receiptFooter">Footer Message</label>
+                  <textarea class="input" id="receiptFooter">Thank you for shopping with us! Items can be exchanged within 7 days with a valid receipt.</textarea>
+                </div>
+                <div class="field" style="margin-bottom:0;">
+                  <label class="checkbox-row"><input type="checkbox" checked> Show barcode on receipt</label>
+                </div>
+              </div>
+              <div class="card card-pad">
+                <div class="section-title">Live Preview</div>
+                <div class="receipt-preview-box">
+                  <p style="text-align:center; font-weight:700; font-family:var(--font-heading);">BrandVista General Store</p>
+                  <p style="text-align:center; font-size:11.5px; color:var(--color-text-muted); margin-top:4px;">42 Market Street, Bengaluru</p>
+                  <div class="divider" style="margin:14px 0;"></div>
+                  <p style="font-size:12px; color:var(--color-text-muted);" id="receiptFooterPreview">Thank you for shopping with us! Items can be exchanged within 7 days with a valid receipt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Appearance -->
+          <div class="settings-panel" id="panel-appearance">
+            <div class="card card-pad">
+              <div class="section-title">Theme</div>
+              <div class="section-sub">Choose how BrandVista POS looks on this device.</div>
+              <div class="theme-options">
+                <div class="theme-option" data-theme-option="light">
+                  <div class="theme-swatch light"></div>
+                  <span>Light</span>
+                </div>
+                <div class="theme-option" data-theme-option="dark">
+                  <div class="theme-swatch dark"></div>
+                  <span>Dark</span>
+                </div>
+                <div class="theme-option" data-theme-option="system">
+                  <div class="theme-swatch system"></div>
+                  <span>System</span>
+                </div>
+              </div>
+            </div>
+            <div class="card card-pad mt-24">
+              <div class="settings-row">
+                <div class="settings-row-label"><h4>Compact sidebar</h4><p>Show icons only to save space</p></div>
+                <label class="switch"><input type="checkbox"><span class="switch-track"></span></label>
+              </div>
+              <div class="settings-row">
+                <div class="settings-row-label"><h4>Animations</h4><p>Enable smooth transitions and hover effects</p></div>
+                <label class="switch"><input type="checkbox" checked><span class="switch-track"></span></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backup & Data -->
+          <div class="settings-panel" id="panel-backup">
+            <div class="card card-pad">
+              <div class="section-title">Backup &amp; Restore</div>
+              <div class="section-sub">Keep a local copy of your store data or restore from one.</div>
+
+              <div class="backup-row">
+                <div class="backup-icon" style="background:var(--color-primary-light); color:var(--color-primary);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </div>
+                <div class="backup-info"><h4>Download Backup</h4><p>Export all settings, products and sales as a JSON file</p></div>
+                <button class="btn btn-secondary" id="downloadBackupBtn">Download</button>
+              </div>
+
+              <div class="backup-row">
+                <div class="backup-icon" style="background:var(--color-success-bg); color:var(--color-success);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                </div>
+                <div class="backup-info"><h4>Restore from Backup</h4><p>Upload a previously exported .json backup file</p></div>
+                <button class="btn btn-secondary" id="restoreBackupBtn">Upload</button>
+              </div>
+
+              <div class="backup-row" style="border-color:var(--color-danger-bg); margin-bottom:0;">
+                <div class="backup-icon" style="background:var(--color-danger-bg); color:var(--color-danger);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg>
+                </div>
+                <div class="backup-info"><h4>Reset Store Data</h4><p>Permanently erase all products, sales and customer records</p></div>
+                <button class="btn btn-danger" id="resetDataBtn">Reset</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/settings.js"></script>
+<script type="module">
+  import { protectPage } from './assets/js/neon-auth.js';
+  protectPage();
+</script>
+</body>
+</html>

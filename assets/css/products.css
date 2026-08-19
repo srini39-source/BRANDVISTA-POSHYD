@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Products page — table toolbar, product image thumbnails, slide-over form,
+   bulk-select action bar. Reused (with minor tweaks) by the standalone
+   Add Product / Edit Product pages.
+   ========================================================================== */
+
+.product-name-cell { display: flex; align-items: center; gap: 12px; }
+.product-name-cell .table-thumb { display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; }
+.product-name-cell .meta { min-width: 0; }
+.product-name-cell h5 { font-size: 13.7px; font-weight: 600; }
+.product-name-cell span { font-size: 12px; color: var(--color-text-muted); }
+
+.bulk-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--color-primary-light); border: 1px solid #bfdbfe;
+  border-radius: var(--radius-md); padding: 12px 18px; margin-bottom: 16px;
+}
+[data-theme='dark'] .bulk-bar { border-color: #1e3a5f; }
+.bulk-bar span { font-size: 13.5px; font-weight: 600; color: var(--color-primary-dark); }
+
+.stock-bar-track { width: 70px; height: 6px; border-radius: 999px; background: var(--color-border); overflow: hidden; display: inline-block; vertical-align: middle; margin-right: 8px; }
+.stock-bar-fill { height: 100%; border-radius: 999px; }
+
+/* Standalone product form page layout */
+.product-form-grid { display: grid; grid-template-columns: 1fr 340px; gap: 24px; align-items: flex-start; }
+@media (max-width: 1080px) { .product-form-grid { grid-template-columns: 1fr; } }
+
+.variant-row { display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 10px; align-items: center; margin-bottom: 10px; }
+.variant-row .btn-icon { flex-shrink: 0; }
+
+.tag-input-wrap { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-bg); }
+.tag-chip { display: flex; align-items: center; gap: 6px; background: var(--color-primary-light); color: var(--color-primary-dark); padding: 5px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.tag-chip button { color: var(--color-primary-dark); display: flex; }
+.tag-input-wrap input { border: none; background: none; outline: none; flex: 1; min-width: 100px; }

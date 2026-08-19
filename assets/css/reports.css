@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Reports page — chart cards, legends, and the best-sellers / inventory
+   breakdown lists.
+   ========================================================================== */
+
+.report-chart-card { padding: 22px 24px; }
+.report-chart-card .card-header { padding: 0 0 18px; border-bottom: none; }
+
+.donut-wrap { display: flex; align-items: center; gap: 24px; }
+.donut-legend { flex: 1; display: flex; flex-direction: column; gap: 12px; }
+.donut-legend-row { display: flex; align-items: center; justify-content: space-between; font-size: 13px; }
+.donut-legend-label { display: flex; align-items: center; gap: 9px; }
+.donut-legend-dot { width: 10px; height: 10px; border-radius: 3px; }
+.donut-legend-value { font-weight: 700; }
+
+.report-tabs { display: flex; gap: 8px; margin-bottom: 22px; }
+.report-tab {
+  padding: 9px 16px; border-radius: var(--radius-sm); border: 1px solid var(--color-border);
+  background: var(--color-card); font-size: 13px; font-weight: 600; color: var(--color-text-muted);
+}
+.report-tab.active { background: var(--color-primary); border-color: var(--color-primary); color: #fff; }
+
+.inventory-summary-row { display: flex; align-items: center; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--color-border); }
+.inventory-summary-row:last-child { border-bottom: none; }
+.inventory-summary-label { flex: 1; font-size: 13.5px; font-weight: 500; }
+.inventory-summary-count { font-weight: 700; font-size: 14px; width: 50px; text-align: right; }
+
+/* Best sellers rows (mirrors dashboard's top-product-row for visual consistency) */
+.top-product-row { display: flex; align-items: center; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--color-border); }
+.top-product-row:last-child { border-bottom: none; }
+.top-product-thumb {
+  width: 42px; height: 42px; border-radius: var(--radius-sm); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; color: #fff;
+}
+.top-product-info { flex: 1; min-width: 0; }
+.top-product-info h5 { font-size: 13.5px; font-weight: 600; }
+.top-product-info span { font-size: 12px; color: var(--color-text-muted); }
+.top-product-bar-track { width: 100%; height: 5px; border-radius: 999px; background: var(--color-bg); margin-top: 6px; overflow: hidden; }
+.top-product-bar-fill { height: 100%; border-radius: 999px; background: var(--color-primary); }
+.top-product-value { font-weight: 700; font-size: 13.5px; white-space: nowrap; }

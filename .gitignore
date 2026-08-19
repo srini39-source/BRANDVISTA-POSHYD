@@ -1,0 +1,23 @@
+# This folder also contains an unrelated XAMPP/Mercury Mail/Perl install
+# (apache/, htdocs/, phpMyAdmin/, perl/, php/, MercuryMail/, sendmail/, etc.)
+# that isn't part of the BrandVista POS project. Rather than list all of
+# that out, we ignore everything by default and explicitly allow only the
+# project's own files below.
+
+# Ignore everything...
+*
+
+# ...but let git walk into directories so it can find the allowed files...
+!*/
+
+# ...and allow the BrandVista POS project files.
+!/*.html
+!/.gitignore
+!/assets/
+!/assets/**
+
+# OS/editor noise, in case any of these ever appear inside the allowed paths
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
