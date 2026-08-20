@@ -91,7 +91,7 @@
           </label>
         </div>
 
-        <button type="button" onclick="const name = 'User'; alert(name);">Sign In</button>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="loginBtn">
           Sign in to dashboard
         </button>
       </form>
@@ -119,6 +119,10 @@
   const modeToggleLink = document.getElementById('modeToggleLink');
   const modeToggleRow = document.getElementById('modeToggleRow');
   const statusLine = document.getElementById('authStatusLine');
+
+  if (!form) {
+    console.error('Form element #loginForm was not found in the DOM.');
+  }
 
   let mode = 'signin'; // 'signin' | 'signup'
 
@@ -178,20 +182,20 @@
 
     if (!validEmail(emailInput.value.trim())) {
       emailInput.classList.add('field-error');
-      document.getElementById('emailError').classList.add('show');
+      document.getElementById('emailError')?.classList.add('show');
       valid = false;
     } else {
       emailInput.classList.remove('field-error');
-      document.getElementById('emailError').classList.remove('show');
+      document.getElementById('emailError')?.classList.remove('show');
     }
 
     if (passwordInput.value.trim().length < 6) {
       passwordInput.classList.add('field-error');
-      document.getElementById('passwordError').classList.add('show');
+      document.getElementById('passwordError')?.classList.add('show');
       valid = false;
     } else {
       passwordInput.classList.remove('field-error');
-      document.getElementById('passwordError').classList.remove('show');
+      document.getElementById('passwordError')?.classList.remove('show');
     }
 
     if (!valid) return;
@@ -208,11 +212,9 @@
         ? await authClient.signUp.email({ email, password, name: fullNameInput ? fullNameInput.value.trim() : email.split('@')[0] })
         : await authClient.signIn.email({ email, password, rememberMe: document.getElementById('remember')?.checked });
 
-      if (result.error) {
-        statusLine.style.color = 'var(--color-danger)';
-        // Displays exact error message from Neon Auth
-        statusLine.textContent = result.error.message || 'Something went wrong.';
-        alert('Auth Error: ' + JSON.stringify(result.error));
+      if (result && result.error) {
+        statusLine.style.color = 'var(--color-danger, red)';
+        statusLine.textContent = result.error.message || 'Something went wrong. Please try again.';
         loginBtn.disabled = false;
         loginBtn.textContent = mode === 'signup' ? 'Create account' : 'Sign in to dashboard';
         return;
@@ -221,12 +223,8 @@
       window.location.href = 'dashboard.html';
     } catch (err) {
       console.error('Neon Auth error details:', err);
-      statusLine.style.color = 'var(--color-danger)';
-      
-      // Print the precise cause instead of generic text
-      statusLine.textContent = 'Auth Exception: ' + (err.message || 'Check browser console (F12)');
-      alert('Neon Auth Failed: ' + err.message + '\nCheck F12 Console for details.');
-      
+      statusLine.style.color = 'var(--color-danger, red)';
+      statusLine.textContent = 'Auth Exception: ' + (err.message || 'Could not reach authentication service.');
       loginBtn.disabled = false;
       loginBtn.textContent = mode === 'signup' ? 'Create account' : 'Sign in to dashboard';
     }
