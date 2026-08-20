@@ -7,10 +7,6 @@
    since browsers block module imports on file:// pages.
    ========================================================================== */
 
-import const authClient = createAuthClient({
-  baseURL: "https://your-neon-auth-url.neon.tech" // Ensure this URL is not empty or pointing to localhost
-});
-
 // Your project's Neon Auth Base URL (Neon Console → project → Auth →
 // Configuration tab). Registered users are synced into the neon_auth.user
 // table in your Neon Postgres database automatically.
